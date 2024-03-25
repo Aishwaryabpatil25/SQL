@@ -77,6 +77,7 @@ select * from orders;
 --  Add column to existing table
 ALTER TABLE movie ADD genre VARCHAR(50);
 ALTER TABLE movie ADD duration INT;
+ ALTER TABLE movie ADD director VARCHAR(100);
 -- Drop two tables
 ALTER TABLE movie DROP COLUMN director;
 ALTER TABLE movie DROP COLUMN genre;
@@ -111,7 +112,7 @@ select * from shop;
 --  player table
 --  Add column to existing table
 ALTER TABLE player ADD position VARCHAR(50);
-ALTER TABLE player ADD age INT;
+ALTER TABLE player ADD teamID INT;
 -- Drop two tables
 ALTER TABLE player DROP COLUMN teamID;
 ALTER TABLE player DROP COLUMN position;
@@ -142,3 +143,4 @@ ALTER TABLE doctor MODIFY COLUMN  specialty VARCHAR(100);
 
 DESC doctor;
 select * from doctor;
+
